@@ -2,150 +2,152 @@
 <html lang="pt-br">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-   <header>
-      <h1>Portfólio Andre Luis Silveira Paiva </h1>
-      <nav><!--seçao de navegaçao web-->
-         <ul><!--lista nao ordenada do menu-->
-            <!--tem que atribuir a direção au menu com href ele diriciona pra o ponto -->
-            <!--href tem que ter o # para definiçao pra ir a referencia-->
-            <li><a href="#sobre">Sobre mim</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contatos">Contatos</a></li>
-            <li><a href="https://google.com.br" target="_blank">google</a></li>
-         </ul>
-      </nav>
-   </header>
-   <section id="sobre">
 
+    <header>
+        <h1>Portfólio</h1>
+        <h2>André Luís</h2>
 
-      <h2>Sobre mim</h2>
-      <img src="minha foto html.jpg" alt="imagem de perfil" width="200" height="200">
+        <nav>
+            <button class="menu-toggle" id="menu-toggle" aria-expanded="false">☰</button>
+            <ul id="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <article><!--equever um artigo sobre min-->
+    <main>
 
-         <p>Sou estudante de programação com foco em desenvolvimento web. <br>
-            Tenho estudado HTML, CSS, JavaScript e Python,<br>
-            e já desenvolvi pequenos projetos para aplicar meus conhecimentos na prática.<br>
-            Meu objetivo é crescer profissionalmente na área de tecnologia.
-         </p>
-      </article>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
 
-      <aside> <!--nova parti asade uma noma parte -->
-         <h3>habilidades</h3>
-         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVA SCRIPT</li>
-            <li>Python</li>
-         </ul>
-      </aside>
-   </section>
+            <article>
+                <p>
+                    Sou estudante de programação com foco em desenvolvimento web.
+                    Estudo HTML, CSS, JavaScript e Python, desenvolvendo projetos
+                    práticos para aplicar meus conhecimentos.
+                </p>
+            </article>
 
+            <aside>
+                <h3>Informações Adicionais</h3>
+                <p>
+                    Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.
+                </p>
+            </aside>
+        </section>
 
-   <section id="projetos"> <!--nova seçao -->
+        <section id="projetos">
+            <h2>Projetos</h2>
 
-      <h2>Projetos</h2>
-      <article>
-         <h3>Portfólio</h3>
-         <p> Desenvolvimento de um site pessoal utilizando HTML <br>
-            para apresentar minhas habilidades e projetos.<br>
-            O objetivo foi praticar estruturação semântica<br>
-            e organização de conteúdo para web.</p>
-      </article>
-   </section>
+            <article>
+                <h3>Projeto 1: Site Pessoal</h3>
+                <p>
+                    Desenvolvi um site pessoal usando HTML, CSS e JavaScript para apresentar meu portfólio.
+                </p>
+            </article>
+        </section>
 
-   <section id="habilidades">
-      <h2>Habilidades e Tecnologia</h2>
-      <table>
-         <thead>
-            <tr>
-               <th>Tecnologia</th>
-               <th>Nivel</th>
-               <th>Descrição</th>
+        <section id="habilidades">
+            <h2>Habilidades e Tecnologias</h2>
 
-            </tr>
-               
-         </thead>
-         <tbody>
-            <tr>
-               <td>HTML</td>
-               <td>Iniciante</td>
-               <td>Capas de construir estrutura depaginas web semanticas e resposivas.</td>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Tecnologia</th>
+                        <th scope="col">Nível</th>
+                        <th scope="col">Descrição</th>
+                    </tr>
+                </thead>
 
-            </tr>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Intermediário</td>
+                        <td>Estruturação e semântica de páginas web</td>
+                    </tr>
 
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Básico</td>
+                        <td>Interatividade no lado do cliente</td>
+                    </tr>
 
-            <tr>
-               <td>CSS</td>
-               <td>Intermediario</td>
-               <td>Experiencia com flexbox ,grid e animações</td>
+                    <tr>
+                        <td>Python</td>
+                        <td>Básico</td>
+                        <td>Lógica de programação e manipulação simples</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-            </tr>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Tem um projeto em mente? Entre em contato!</p>
+            <form action="https://formsubmit.co/SEUEMAIL@gmail.com" method="POST">
 
-            <tr>
-               <td>JavaScript</td>
-               <td>Básico</td>
-               <td>Desenvolvimento de scripts do lado do cliente para internet</td>
-               
-            </tr>
-         </tbody>
+                <!-- Configurações extras -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Nova mensagem do Portfólio">
 
-      </table>
-   </section>
-   <footer><!--este é o roda pe não presisa abri nova seção -->
-      <p>Direitos reservado a Andre Luis Silveira Paiva</p>
-   </footer>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
 
-   <section id="contatos">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
 
-      <h2>Contatos</h2>
-      <p>Tem um porjeto em mente ? entre em contato . </p>
-      <form action="">
-         <label for="nome">Nome :</label>
-         <input type="text" id="nome=" name="nome"><br>
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
 
-         <label for="email">E-mail:</label>
-         <input type="email" id="email=" name="email"><br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
 
+                <label>
+                    <input type="checkbox" name="newsletter" value="sim">
+                    Quer receber novidades?
+                </label>
 
-         <label for="telefone">Telefone:</label>
-         <input type="tel" id="telefone" name="telefone">
-         <br>
+                <button type="submit">Enviar Mensagem</button>
 
+            </form>
+        </section>
 
-         <label for="assunto">Assunto :</label>
-         <select name="assunto" id="assunto">
+    </main>
 
-            <option value="orçamento">Orçamento
-            <option value="duvida">Duvida</option>
-            <option value="outro">Outro</option>
-         </select>
-         <br>
-         <label for="mensagem">Mensagem</label>
-         <textarea name="nensagem" id="mensagem" cols="20" rows="5"></textarea>
-         <br>
+    <footer>
+        <p>&copy; 2026 André Luís. Todos os direitos reservados.</p>
+    </footer>
 
-         <input type="checkbox" id="inscriçao" name="inscriçao">
-         <label for="inscriçao">Deseja receber ninha mensagem ? fique por dentro</label>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
 
-         <br>
-         <input type="submit" value="Enviar mensagem">
+        menuToggle.addEventListener('click', () => {
+            const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('active');
+        });
+    </script>
 
-
-
-
-      </form>
-
-
-
-   </section>
 </body>
 
 </html>
